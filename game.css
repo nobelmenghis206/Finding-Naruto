@@ -1,0 +1,183 @@
+/*
+  Name: Nobel Menghis
+  Date: 07/13/23
+  SECTION: AD
+  TA: Taura Wueger
+
+  This is a css style sheet file for the game.html file in which syles the
+  the game. With this file I am styling the homepage with a fixed
+  background of the village the same as he homepage and the color
+  theme of Narutos outfit.
+*/
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("img/hiddenleaf.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  object-fit: cover;
+  background-size: cover;
+}
+
+footer {
+  margin: 20px;
+  padding-right: 20px;
+}
+
+.attempts-tracker {
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 10px;
+  top: 10px;
+  right: 25px;
+  border-radius: 10%;
+}
+
+.opener {
+  color: #20263f;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 100px;
+}
+
+.card-container {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.card {
+  margin: 50px auto 0;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.overall-card {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.popup p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.popup button {
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#h1-container {
+  align-items: center;
+  margin-bottom: -20px;
+}
+
+/* Combine CSS Selectors */
+.opener,
+footer,
+#h1-container,
+.popup {
+  text-align: center;
+}
+
+.opener,
+.attempts-tracker,
+footer {
+  background-color: #f8cc56;
+}
+
+.opener,
+.popup p {
+  color: black;
+}
+
+.opener,
+footer,
+.popup {
+  padding: 20px;
+}
+
+.opener,
+.overall-card,
+.card-face,
+.image,
+footer,
+.game-title-img {
+  width: 100%;
+}
+
+.opener,
+.overall-card,
+#h1-container {
+  position: relative;
+}
+
+.card-container,
+#h1-container {
+  display: flex;
+  justify-content: center;
+}
+
+.overall-card,
+.image,
+.card-face,
+.game-title-img {
+  height: 100%;
+}
+
+.overall-card,
+.popup button {
+  cursor: pointer;
+}
+
+.card-front,
+.card-back,
+.popup button {
+  background-color: #ea8d47;
+}
+
+.image,
+.game-title-img {
+  object-fit: contain;
+}
+
+.popup button,
+.attempts-tracker {
+  font-size: 16px;
+}
+
+.overall-card.is-flipped,
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.attempts-tracker,
+.card-face {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}

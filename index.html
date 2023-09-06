@@ -1,0 +1,86 @@
+<!--
+  Name: Nobel Menghis
+  Date: 07/13/23
+  SECTION: AD
+  TA: Taura Wueger
+
+  Here is a homepage section that is coded in html. Here it mentions
+  the rules to Finding Naruto and offers 3 buttosn the user can click
+  to choose the level they want, the button then redirects to the game
+  html.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game Introduction</title>
+    <link rel="stylesheet" href="styles.css" >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <body>
+    <main class="container">
+      <section class="round-box">
+        <section id="h1-container">
+          <img src="img/homepagetitle.png" alt="Game Title" >
+        </section>
+        <p>
+          In this exciting game, your objective is to locate Naruto among a
+          collection of flip cards. Test your memory and concentration skills as
+          you try to uncover the hidden Naruto within the allotted number of
+          attempts.
+        </p>
+        <p>Here's how to play:</p>
+        <ol>
+          <li>
+            Choose a difficulty level: Each level presents a unique challenge
+            with varying numbers of flip cards and attempts allowed. Select a
+            level that suits your preference and skill level.
+          </li>
+          <li>
+            The game begins: You'll be presented with a grid of flip cards,
+            face-down. Your task is to find the card that hides Naruto.
+          </li>
+          <li>
+            Flip the cards: Click on cards to reveal what's underneath.
+            Remember, you have a certain amount of tries based on which level
+            you choose!
+          </li>
+          <li>
+            Each level grants you a specific number of tries before the game
+            ends. Use your attempts wisely to increase your chances of finding
+            Naruto.
+          </li>
+          <li>
+            Success or failure: If you manage to find Naruto within the given
+            number of attempts, congratulations! You win the game! If you
+            exhaust all your attempts without finding Naruto, don't worry. You
+            can always try again or choose a different difficulty level on this
+            page.
+          </li>
+        </ol>
+        <p>
+          Remember, good luck is on your side! Have a fantastic time playing
+          "Find Naruto" and enjoy the thrill of uncovering the hidden card!
+        </p>
+        <section class="level-buttons">
+          <button id= "easy-bt" onclick="selectLevel('easy')">
+            Easy
+          </button>
+          <button id= "medium-bt" onclick="selectLevel('medium')">
+            Medium
+          </button>
+          <button id= "hard-bt" onclick="selectLevel('hard')">
+            Hard
+          </button>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>Created by: Nobel Menghis</p>
+    </footer>
+    <script src="homepage.js"></script>
+  </body>
+</html>
